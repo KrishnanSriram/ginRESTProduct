@@ -150,5 +150,5 @@ func main() {
 	router.POST("/products", addProductHandler)
 	router.PUT("/products/:productId", updateProductByIdHandler)
 	router.DELETE("/products/:productId", deleteProductByIdHandler)
-	router.Run()
+	router.Run(":8080")
 }
